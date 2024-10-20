@@ -34,7 +34,7 @@ fiberjobs/
 
 ---
 
-## **ENV Example*
+## **ENV Example**
 ```bash
 MONGODB_URI=
 PROXY_URL=
