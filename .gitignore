@@ -1,0 +1,40 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, builds, and logs
+*.out
+*.test
+*.log
+
+# Temporary files and directories
+*.tmp
+*.swp
+*.swo
+
+# Build outputs and cache
+bin/
+dist/
+.tmp/
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.iml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Air config and temp files
+.air.toml
+tmp/
+
+# Environment variables (keep secrets out of Git)
+.env
+.env.*
+
+# Node_modules (if your project includes JS/TS parts)
+node_modules/
