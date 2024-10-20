@@ -1,21 +1,25 @@
-// main.go
 package main
 
 import (
+	"go-scraper/config"
 	"log"
 
 	"github.com/gofiber/fiber/v2"
 )
 
 func main() {
-	// Initialize a new Fiber app
+	// Initialize MongoDB
+	config.InitDB()
+	defer config.CloseDB() // Ensure MongoDB disconnects on exit
+
+	// Initialize Fiber app
 	app := fiber.New()
 
-	// Create a route for "/"
+	// Root route
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Hello Go Scraper")
+		return c.SendString("MongoDB connected!")
 	})
 
-	// Run the Fiber app with default settings (port 8080)
-	log.Fatal(app.Listen(""))
+	// Start the Fiber app on port 8080
+	log.Fatal(app.Listen(":8080"))
 }
