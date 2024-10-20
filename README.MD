@@ -34,6 +34,15 @@ fiberjobs/
 
 ---
 
+## **ENV Example*
+```bash
+MONGODB_URI=
+PROXY_URL=
+```
+
+
+---
+
 ## **Test the Scraper**
 ```bash
 curl http://localhost:8080/scrape-jobs
