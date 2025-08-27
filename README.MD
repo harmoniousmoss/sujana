@@ -1,7 +1,6 @@
-# **FiberJobs**
+## **Sujana – Scalable Web Scraper for Remote Job Data
 
-A simple and efficient web scraper built in **Go** with the **Fiber framework**, collecting and storing **remote job data** from **UN Jobs** in **MongoDB**. This project demonstrates **HTTP scraping with proxy support**, **error handling with retries and backoff**, and **rotating proxies** to avoid IP blocking.
-
+Sujana is a lightweight web scraper built to collect remote job listings from the UN Jobs portal. It features proxy rotation, retry logic with backoff, and resilient error handling to ensure reliable data collection.
 ---
 
 ## **Case Study**
@@ -39,7 +38,6 @@ fiberjobs/
 MONGODB_URI=
 PROXY_URL=
 ```
-
 
 ---
 
